@@ -17,10 +17,11 @@ const LeftSideNav = () => {
     { name: "Bookmarks", icon: <BookmarkSVG /> },
     { name: "Profile", icon: <ProfileSVG /> },
   ];
+
   return (
     <div>
       {menu.map((items, index) => (
-        <Row key={index} gutter={(12, 12)}>
+        <Row key={index} gutter={[12, 12]}>
           <Col>{items.icon}</Col>
           <Col>
             <p style={{ fontSize: "x-large" }}>{items.name}</p>
