@@ -1,6 +1,6 @@
 import React from "react";
 
-const leftSideNav = () => {
+const LeftSideNav = () => {
   return (
     <div>
       Home, explore, notifications, messages, bookmarks, profile, addmovie
@@ -8,4 +8,4 @@ const leftSideNav = () => {
   );
 };
 
-export default leftSideNav;
+export default LeftSideNav;

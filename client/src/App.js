@@ -1,6 +1,6 @@
 import React from "react";
-import leftSideNav from "./Components/LeftSideNav/leftSideNav";
-import feed from "./Components/Feed/feed";
+import LeftSideNav from "./Components/LeftSideNav/LeftSideNav";
+import Feed from "./Components/Feed/Feed";
 import RightSideNav from "./Components/RightSideNav/RightSideNav";
 
 import { Layout, Row, Col, Input } from "antd";
@@ -43,7 +43,9 @@ const App = () => {
           }}
         >
           <Row gutter={[36, 36]}>
-            <Col md={6}>Left Side Nav</Col>
+            <Col md={6}>
+              <LeftSideNav />
+            </Col>
             <Col
               md={12}
               style={{
@@ -53,7 +55,7 @@ const App = () => {
                 borderColor: "grey",
               }}
             >
-              Content
+              <Feed />
             </Col>
             <Col md={6}>
               <RightSideNav />
