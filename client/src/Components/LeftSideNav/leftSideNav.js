@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "antd";
+import { Row, Col, Avatar } from "antd";
 
 import ExploreSVG from "./SVG/ExploreSVG";
 import HomeSVG from "./SVG/HomeSVG";
@@ -20,11 +20,25 @@ const LeftSideNav = () => {
 
   return (
     <div>
+      <Row style={{ padding: "0px 0px 25px 0px" }}>
+        <Col md={8}>
+          <Avatar
+            size={72}
+            src={require(`../../Assets/Users/myDP.jpg`).default}
+            style={{ margin: "5px" }}
+          />
+        </Col>
+        <Col md={16}>
+          <div style={{ fontSize: "3vh" }}>Michiko Go</div>
+          <div>Currently Watching:</div>
+          <div>Series Watching</div>
+        </Col>
+      </Row>
       {menu.map((items, index) => (
         <Row key={index} gutter={[12, 12]}>
           <Col>{items.icon}</Col>
           <Col>
-            <p style={{ fontSize: "x-large" }}>{items.name}</p>
+            <p style={{ fontSize: "3vh" }}>{items.name}</p>
           </Col>
         </Row>
       ))}
