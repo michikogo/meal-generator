@@ -38,7 +38,7 @@ const App = () => {
         <div
           style={{
             padding: "0px 50px",
-            height: "81vh",
+            minHeight: "81vh",
             backgroundColor: "#001529",
           }}
         >
